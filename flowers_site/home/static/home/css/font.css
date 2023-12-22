@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "KaisenDecol-Regular";
+    src: url("../fonts/KaisenDecol-Regular.ttf");
+
+  }
+  
+  
+  /* Теперь можно использовать шрифт */
+  html {
+    font-family: KaisenDecol-Regular !important; 
+    
+  }

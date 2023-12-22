@@ -1,0 +1,416 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block header %}
+<div class="container-fluid fs-1" style="font-family: KaisenDecol-Regular !important; background-color: rgb(173,200,169); color: black;">
+    <div class="row justify-content-md-center align-items-center" style="justify-content: center">
+        <div class="col-3" style="padding-top: 10px;">
+            <p>
+                <a href="" class="text-decoration-none h1" style="color: black;">ЗЕЛЕНСТРОЙ</a>
+            </p>
+        </div>
+        <div class="col-1" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="45">
+                <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+            </svg>
+        </div>
+        <div class="col-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="45" height="45">
+                <path d="M 280 -80 q -33 0 -56.5 -23.5 T 200 -160 q 0 -33 23.5 -56.5 T 280 -240 q 33 0 56.5 23.5 T 360 -160 q 0 33 -23.5 56.5 T 280 -80 Z m 400 0 q -33 0 -56.5 -23.5 T 600 -160 q 0 -33 23.5 -56.5 T 680 -240 q 33 0 56.5 23.5 T 760 -160 q 0 33 -23.5 56.5 T 680 -80 Z M 246 -720 l 96 200 h 280 l 110 -200 H 246 Z m -38 -80 h 590 q 23 0 35 20.5 t 1 41.5 L 692 -482 q -11 20 -29.5 31 T 622 -440 H 324 l -44 80 h 480 v 80 H 280 q -45 0 -68 -39.5 t -2 -78.5 l 54 -98 l -144 -304 H 40 v -80 h 130 l 38 80 Z m 134 280 h 280 h -280 Z" />
+            </svg>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container-fluid fs-2" style="background-color: rgb(154,177,148);font-family: KaisenDecol-Regular !important; padding-bottom: 20px; ">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-2 col-md-6" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin-top: 20px; ">
+            <div class="row" style="padding-left: 20px;">
+                <p> 
+                    Селекционеры:
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    <ul class="list-group list-group-flush " style="margin-left: 5px; background-color: rgb(225,230,224); width: 300px; ">
+                      <li class="list-group-item list-group-item-action" style="background-color: rgb(225,230,224);width: 300px;">• Цветы столицы</li>
+                      <li class="list-group-item list-group-item-action" style="background-color: rgb(225,230,224); width: 300px;">• Цветочные композиции</li>
+                      <li class="list-group-item list-group-item-action" style="background-color: rgb(225,230,224); width: 300px;">• Цветники</li>
+                      <li class="list-group-item list-group-item-action" style="background-color: rgb(225,230,224); width: 300px;">• Другие</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-5" style="padding-left: 20px;">
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/1.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Гиацинты синие, белые, <br>
+                                розовые
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 250р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px;  margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/2.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Флоксы белые, розовые <br>
+                                Синие, фиолетовые
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 450р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/3.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Виола бордовая, <br>
+                                Желтая, фиолетовая
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 20px.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/4.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Герань розовая, <br>
+                                Красная
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 350р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px;  margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/5.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Бегония домашняя <br>
+                                Персиково-розовая
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 150р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/6.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Чайная роза розовая, <br>
+                                Белая, желтая
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 500р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="background-color: rgb(225,230,224); border-radius: 20px; padding: 10px; margin: 20px;">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <img src="{% static 'home/img/7.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <p>
+                                Агрегатум <br>
+                                Обыкновенный
+                            </p>    
+                        </div>
+                        <div class="row">
+                            <p>
+                                1шт. - 150р.
+                            </p>
+                            <div class="row">
+                                <div class="input-group" style="width: 100px;">
+                                    <span class="input-group-btn" style="margin-right: 25px; margin-top: 1px;">
+                                        <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                          <span class="glyphicon glyphicon-minus" ></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100" style="max-width: 50px; max-height: 26px; margin-bottom: 15px;">
+                                    <span class="input-group-btn" style="margin-top: 1px;">
+                                        <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.btn-number').click(function(e){
+     e.preventDefault();
+     
+     fieldName = $(this).attr('data-field');
+     type      = $(this).attr('data-type');
+     var input = $("input[name='"+fieldName+"']");
+     var currentVal = parseInt(input.val());
+     if (!isNaN(currentVal)) {
+         if(type == 'minus') {
+             
+             if(currentVal > input.attr('min')) {
+                 input.val(currentVal - 1).change();
+             } 
+             if(parseInt(input.val()) == input.attr('min')) {
+                 $(this).attr('disabled', true);
+             }
+ 
+         } else if(type == 'plus') {
+ 
+             if(currentVal < input.attr('max')) {
+                 input.val(currentVal + 1).change();
+             }
+             if(parseInt(input.val()) == input.attr('max')) {
+                 $(this).attr('disabled', true);
+             }
+ 
+         }
+     } else {
+         input.val(0);
+     }
+ });
+ $('.input-number').focusin(function(){
+    $(this).data('oldValue', $(this).val());
+ });
+ $('.input-number').change(function() {
+     
+     minValue =  parseInt($(this).attr('min'));
+     maxValue =  parseInt($(this).attr('max'));
+     valueCurrent = parseInt($(this).val());
+     
+     name = $(this).attr('name');
+     if(valueCurrent >= minValue) {
+         $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+     } else {
+         alert('Sorry, the minimum value was reached');
+         $(this).val($(this).data('oldValue'));
+     }
+     if(valueCurrent <= maxValue) {
+         $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+     } else {
+         alert('Sorry, the maximum value was reached');
+         $(this).val($(this).data('oldValue'));
+     }
+     
+     
+ });
+ $(".input-number").keydown(function (e) {
+         // Allow: backspace, delete, tab, escape, enter and .
+         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+              // Allow: Ctrl+A
+             (e.keyCode == 65 && e.ctrlKey === true) || 
+              // Allow: home, end, left, right
+             (e.keyCode >= 35 && e.keyCode <= 39)) {
+                  // let it happen, don't do anything
+                  return;
+         }
+         // Ensure that it is a number and stop the keypress
+         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+             e.preventDefault();
+         }
+     });
+ </script>
+{% endblock %}
+{% block footer %}
+<div class="container-fluid" style="background-color: rgb(126,151,122); color: white; padding-top: 20px; font-family: KaisenDecol-Regular !important;">
+     <div class="row fs-2 text-center justify-content-md-center">
+        <div class="col-2">
+            <p class="h1" style="padding-left: 10px;">
+                КОМПАНИЯ
+            </p>
+            <p class="fs-2">
+                <ul class="list-group list-group-flush " style="margin-left: 5px; background-color:  rgb(126,151,122); width: 300px; ">
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122);;width: 300px; color: white;">О компании</li>
+                  <li class="list-group-item list-group-item-action" style="background-color:  rgb(126,151,122); width: 300px; color: white;">Новости</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Партнерам</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Правила продаж</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Политика конфиденциальности</li>
+
+                </ul>
+            </p>    
+        </div>
+        <div class="col-2">
+            <p class="h1" style="padding-left: 10px;">
+                ПОКУПАТЕЛЯМ
+            </p>
+            <p class="fs-2">
+                <ul class="list-group list-group-flush " style="margin-left: 5px; background-color:  rgb(126,151,122); width: 300px; ">
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122);;width: 300px; color: white;">Как оформить заказ</li>
+                  <li class="list-group-item list-group-item-action" style="background-color:  rgb(126,151,122); width: 300px; color: white;">Способы оплаты</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Доставка</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Обмен возврат</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Прочее</li>
+
+                </ul>
+            </p>    
+        </div>
+        <div class="col-2">
+            <p class="h1" style="padding-left: 10px;">
+                ДЛЯ СВЯЗИ
+            </p>
+            <p class="fs-2">
+                <ul class="list-group list-group-flush " style="margin-left: 5px; background-color:  rgb(126,151,122); width: 300px; ">
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122);;width: 300px; color: white;">Номер телефона:</li>
+                  <li class="list-group-item list-group-item-action" style="background-color:  rgb(126,151,122); width: 300px; color: white;">8 800 999 - 08 - 09</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">Электронная почта:</li>
+                  <li class="list-group-item list-group-item-action" style="background-color: rgb(126,151,122); width: 300px; color: white;">zelensrtoy@mail.ru</li>
+                </ul>
+            </p>    
+        </div>
+     </div>
+</div>
+{% endblock %}
